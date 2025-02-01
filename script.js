@@ -6,12 +6,3 @@ function showContactInfo() {
         contactInfo.style.display = "none";
     }
 }
-
-function showAdditionalInfo() {
-    var additionalInfo = document.getElementById("additional-info");
-    if (additionalInfo.style.display === "none") {
-        additionalInfo.style.display = "block";
-    } else {
-        additionalInfo.style.display = "none";
-    }
-}
