@@ -10,41 +10,55 @@
     <header>
         <h1>Mohammad Norman Gaza Laksono</h1>
     </header>
-    
-    <button class="accordion"><h2>About Me</h2></button>
-    <div class="panel">
+
+    <section id="about">
+        <h2>About Me</h2>
         <p>I am a physics graduate with concentration on condensed matter physics</p>
-    </div>
-
-    <button class="accordion"><h2>Experience</h2></button>   
-    <div class="panel">
-        <ul>
-            <li><strong>Research Assistant</strong> - National Research and Innovation Agency (2023-2024)</li>
-        </ul>
-    </div>
-
-    <button class="accordion"><h2>Skills</h2></button>
-    <div class="panel">
-        <ul>
-            <li>First-Principles Calculations</li>
-            <li>High-Performance Computing</li>
-            <li>Data Visualization</li>
-            <li>Scientific Writing & Publishing</li>
-        </ul>
-    </div>
+    </section>
     
+    <section class="accordion">
+        
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion('experience')">Experience</div>   
+            <div class="accordion-content" id="experience">
+                <ul>
+                    <li><strong>Research Assistant</strong> - National Research and Innovation Agency (2023-2024)</li>
+                </ul>
+            </div>
+        </div>
 
-    <button class="accordion"><h2>Contact</h2></button>
-    <div class="panel">
-        <button onclick="OpenOutlook()">E-mail</button> 
-        <button onclick="OpenLinkedIn()">LinkedIn</button> 
-        <button onclick="OpenGithub()">Github</button> 
-    </div>
-    
-    <section>
-        <h2>Publications</h2>
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion('skills')">Skills</div>
+            <div class="accordion-content" id="skills">
+                <ul>
+                    <li>First-Principles Calculations</li>
+                    <li>High-Performance Computing</li>
+                    <li>Data Visualization</li>
+                    <li>Scientific Writing & Publishing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion('publications')">Publications</div>
+            <div class="accordion-content" id='publications'>
+                <ul>
+                    <li>TBA</li>
+                </ul>
+            </div>
+        </div>
+
     </section>
 
+    <section id="contact" onclick="showContactInfo()" style="cursor: pointer; padding: 20px; background-color: #f0f0f0; text-align: center;">
+        <h2>Contact</h2>
+        <div id="contact-info" style="display: none;">
+            <a href ="mailto:mohammad.norman@ui.ac.id" class="button">E-mail</a> 
+            <a href="https://www.linkedin.com/in/mohammad-norman-gaza-laksono-5979a11a7/" class="button" target="_blank" >Linkedin</a> 
+            <a href="https://github.com/Normanthen" class="button" target="_blank" >Github</a> 
+        </div>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
