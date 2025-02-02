@@ -9,17 +9,17 @@ for(i = 0; i < acc.length; i++){
 
         /* Toggle between hiding and showing the active panel */
         var panel = this.nextElementSibling;
-        if (panel.style.display === "block"){
-            panel.style.display = "none";
+        if (panel.style.maxHeight){
+            panel.style.maxHeight == null;
         } else{
-            panel.style.display = "block";
+            panel.style.maxHeight = panel.scrollHeight + "px"
         }
         
     });
 }
 
 function OpenOutlook(){
-    window.location.href ="mailto:mohammad.norman@ui.ac.id"
+    window.location.href ="mailto:mohammad.norman@ui.ac.id";
 }
 
 function OpenLinkedIn(){
